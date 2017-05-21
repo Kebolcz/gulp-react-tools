@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-cmn-Hans">
+    <meta charset="utf-8">
+    <meta name="description" content="starter-kit">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Amaze UI Touch</title>
+    <link rel="stylesheet" href="../../lib/amazeui.touch.min.css" />
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src="../../lib/appcan.js"></script>
+    <script src="../../lib/appcan.control.js"></script>
+    <script src="../../lib/app.common.js"></script>
+    <script src="../../lib/app.config.js"></script>
+    <!-- build:js -->
+    <script src="./js/App.js"></script>
+    <!-- endbuild -->
+    <script type="text/javascript">
+        appcan.ready(function () {
+            var screenWidth = document.documentElement.clientWidth;
+            var scale = 20;
+            $("html").css("font-size", Math.floor(0.9 * screenWidth / scale) + "px");
+        });
+    </script>
+</body>
+
+</html>
