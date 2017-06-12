@@ -70,5 +70,3 @@ const CardExample = () => ({
 });
 
 ReactDOM.render(<CardExample />, document.getElementById('root'));
-
-
